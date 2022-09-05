@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+ @font-face {
+    font-family: android;
+    src: url('../fontes/idroid.otf') format('opentype') ;
+    font-weight: normal; 
+ }
+
+:root{
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque:'Bebas Neue', cursive;
+    --fonte-android: 'android', cursive;
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+strong{
+    color: var(--cor4);
+}
+
+body{
+    background-color: var(--cor0);
+}
+
+
+header{
+    padding-top: 30px;
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
+    text-shadow: 1px 1px 1 px rgba(0, 0, 0, 0.418);
+    min-height: 150px;
+}
+
+header h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: var(--fonte-destaque);
+}
+
+header p{
+    color: white;
+    font-family:var(--fonte-destaque) ;
+    text-align: center;
+    width: 400px;
+    margin: auto;
+}
+
+nav{
+    background-color: var(--cor5);
+    color: white;
+    padding: 5px;
+    font-family: var(--fonte-padrao);
+}
+
+
+nav a{
+    text-decoration: none;
+    padding: 10px;
+    color: var(--cor1);
+    border-radius: 10px;
+    transition-duration: 0.7s;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+}
+
+nav a:hover{
+    
+    background-color: var(--cor3);
+    color: var(--cor5);
+    transform: translate(-3px, -3px);
+}
+
+main{
+    
+        background-color: white;
+        min-width: 300px;
+        max-width: 1000px;
+        padding: 20px;
+        margin: auto;
+        margin-bottom: 30px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.37) ;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+}
+
+main h1{
+    font-family: var(--fonte-android);
+    font-size: 1.8em;
+    font-weight: normal;
+    color: var(--cor4);
+}
+
+
+main h2{
+    font-family: var(--fonte-android);
+    color: var(--cor4);
+    background-image: linear-gradient(to right, var(--cor1), white  );
+}
+
+main p{
+    line-height: 2em;
+    text-indent: 20px;
+}
+
+article a{
+      color: var(--cor3);  
+      text-decoration: none;
+      display: inline-block;
+      text-indent: 0px;
+      position: relative; 
+      
+}
+
+
+article a:hover{
+    transform: translate(-1.3px, -1.3px);
+    transition-duration: 0.4s;
+    text-decoration: underline;
+    color: var(--cor5);
+}
+
+img{
+    width: 100%;
+}
+
+
