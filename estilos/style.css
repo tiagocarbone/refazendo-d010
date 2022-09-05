@@ -111,6 +111,7 @@ main h2{
     font-family: var(--fonte-android);
     color: var(--cor4);
     background-image: linear-gradient(to right, var(--cor1), white  );
+    padding-left: 4px;
 }
 
 main p{
