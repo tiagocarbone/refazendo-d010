@@ -38,6 +38,11 @@ body{
 }
 
 
+a.externo::after{
+    content: '\00A0\1F517' 
+}
+
+
 header{
     padding-top: 30px;
     background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
@@ -59,7 +64,7 @@ header p{
     text-align: center;
     width: 400px;
     margin: auto;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 nav{
